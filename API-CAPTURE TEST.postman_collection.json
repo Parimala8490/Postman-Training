@@ -1,0 +1,381 @@
+{
+	"info": {
+		"_postman_id": "926b297f-17c2-4230-91c4-9049e83e8071",
+		"name": "API-CAPTURE TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LOGIN-WEST COAST RAILWAY",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "westcoastrailways.co.uk"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "https://westcoastrailways.co.uk"
+					},
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "referer",
+						"value": "https://westcoastrailways.co.uk/login"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga=GA1.3.1383827511.1645177629; _gid=GA1.3.1901475063.1645177629; _fbp=fb.2.1645177629179.424402663; XSRF-TOKEN=eyJpdiI6InZxOG1pZFIzejZXNnhuYTFndnhvaVE9PSIsInZhbHVlIjoiaVgvN1B6MXRUa0dkb3I5NW9EVmtPeG9ERnhDeUlmM0p0U1h4c005cEJLbnZoT0NjM2N2ZzB5MUhLcXUyNjZJQ0hCR1p5cGw2RnNsQWJ1M0JRUGNTejlzRXpGUUhncE5EL3pDZHZkVWhiTzBjL3Q1czJnVFduT0taQmtkemZvR2UiLCJtYWMiOiI1YzBkZDQ4ZDNjOTlmYjgyZTJjNzZiODRmMjRkNzI3NGExNGI1MWQ3YjZlNTYwYWJiMTJlN2IyNGFjY2JmMzAyIiwidGFnIjoiIn0%3D; west_coast_railways_session=eyJpdiI6ImlWN0hXdHE2cXhadkczaTN0T3hUWlE9PSIsInZhbHVlIjoia0Y5aFd0aFNYN3ZScHZlNUsrcmlwTHNhUk9BODBHaXZWcnNDbTFMQzFGQ0FvZGVXekozWFc2SGdNSE8rWkFONzBBQmpFSnhuWEl0NDQwblRZbFdsWDRVRzlmM29SaXpmbnZxQW01c2w4U1Z4ZlhEQXRENjRZYlBhNzZRRHBEYkMiLCJtYWMiOiI3MzVjOWNiYTJmN2ZlMjdiNDg3MjdlMGMzNWI5NWE0MTdlZTZmNGNlNDIwZmI4YmQ2OWQyMzJiZThhYWJhZDkzIiwidGFnIjoiIn0%3D"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_token",
+							"value": "e010pbUrQQEeeb3mi4j278JJKyWd0jBL3WmiBdP3",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "admin@admin.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://westcoastrailways.co.uk/login",
+					"protocol": "https",
+					"host": [
+						"westcoastrailways",
+						"co",
+						"uk"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "XFINITY STREAM LOGIN API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "login.xfinity.com"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "https://login.xfinity.com"
+					},
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "referer",
+						"value": "https://login.xfinity.com/login?r=comcast.net&s=oauth&continue=https%3A%2F%2Foauth.xfinity.com%2Foauth%2Fauthorize%3Fstate%3DeyJlbmMiOiJBMTI4R0NNIiwiYWxnIjoiUlNBLU9BRVAtMjU2In0.Uw3ws7tL8x040IzwUdvlQAaq2ZEFftmDMScPw50toKkvSw0CRReSUyVW-1m65ij8Cu0lVvuWgPbYPCrZXrYbIo7TTG2VlVDffi_m8Nv3v2ZPevqhwgo1dOf747thgUnTlr993kLtumil58leysI00Z6zDtDUcSO6tCt5JNcwuVKHz_nQiFQ7MCWhLUYtPSp2HkLwww5Qis4atPgFZDzTyG_5jrco0mg5YXoo5J6Woov9F3B7guZaGDO8qzVcAeiUK4jtpSXNxfax2zY7YenBo2_MPk84nxdSjfYZKky3XGcsJyOWpVBgocnpB2PQlanR5uULwcT5nBMFdcgMR5SgwQ.HNqifTFqWYG6RxUd.qE2n-6mDUjFUhvSvqww8rLoXPZZMfOVZMtdfL4a9S_hotiVeWhY10cP9hOFh2r6e7DJS5QCZ8xY5mwZD6_gQlc_7OGe7AFTPS-pas4p2FJT6fA_WHYVTT4dXQ4ntdl46wkl0T7aAUutoFrEO5S4GLc0rJGY8AJIIOSvz1S6QttUxF7Oohumb1xVirE4nDEHAjSPxrag2HqpBtmQSxBPjey-o09ID7NiNDXaNAcmUChsSjgSw6-tsN4CpK9ct2EQ_Mgvf-O4cpLbPAQcOgdCb-D1v2aPCmCuFq6l5CGKo8ZaUKx20tysNWOERr2Ls2r5-SvYhMTVCfZSBlWawOlRCSmv_mTeNQ2SGxEeeA3CxUkIS_giVLYBi-TMIjar2O27VXyBblDnC2Oa3fJL4oJMtgDc-MoES_7nZ08GTuiDsy7lFHloYDNZeVbwXQ6D9GkjKtN1NgctbscnFBI6EK9OnRvF2vBwQfvO_GqV-idAgMY7aZlHi53mx7vPhHQUIDUxsanlJirmu_-xnW28XQE9Cw9BBzj5AYkr9rFVbEvGtdn22EEaweEWsHw.4_g-h7jl45tLj2rogysfaA%26scope%3Dopenid%26client_id%3Dxfinity-stream-login%26response_type%3Dcode%26redirect_uri%3Dhttps%3A%2F%2Fxerxes-sub.xerxessecure.com%2Fxerxes-jwt%2Foauth%2Fcode%26nonce%3Dxerxes-lite.37ef8b1d-c1cc-4120-975f-617a76e37d9d%26prompt%3Dselect_billing_account%26response%3D1&client_id=xfinity-stream-login&reqId=70fbcd27-dfe3-4540-a532-2e5b537066d9&selectAccount=1"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "cookie",
+						"value": "PSC=UCID=aede8879-b953-456d-a6f0-1b3394fc8cbb; soc=1; bid=BMpmgTssS4afil1gq3NjywsfE6w; _gcl_au=1.1.110729324.1644933052; isAuth=1; at_check=true; AMCVS_DA11332E5321D0550A490D45%40AdobeOrg=1; s_sess=%20s_cc%3Dtrue%3B; aam_sc=aamsc%3D8163787%7C7142903%7C1st%20Party%20MDU%20Customer%20Flag; SC=RC.USID=69c2a10c-e9fd-4feb-ab41-357ea2c34372&VA=1025; bm_sz=A2FCBDE514F48488C3DEEDC2F1D14243~YAAQVV8sMbYVl9h+AQAAfdYzDA7zTdQmOB+tRqDrHUWHXeg52EJw5yPyV9CJpgJLlkNdm8MVBd652A75QJ8Z3KDmzJk1UdX7/skIno5i1szalfzKnkDsVUD9nPJp5SA8bWsvnocvrW0MqHeVqTFH6a8UzvTJLDhvyBnwUrGW3a80HXquPMsCIxoxZJEdiBCXRMQe69ttqldHRTOBczsVLrPIXuuz30+H1L5nozNkCCGotOJke9Ktj9oDJWVWFbK0nSNyA3UbSbnI3anYkgy2VaX686ZRHJPQVtalr1qZgzhZzPkN~4604995~4468791; bm_mi=D141EBEAC5109C1B555AF61E3C666DE6~LaPDM4AQFLWb7np9l/3wYG7oKTC9mbkzreb6xfDcHiuE37Ki8UL2I4YMgIBLswuYZ02RIxIzIgGJ4A5ZkwM2tF/VY3+9+xVH8p0L37yWWm2QhXPmu6+1sXKTIbdu/isp1TeEs4SrdTC6wc/+OdHZPO+RpmO3XwHWjvqrShh6oNdH8A/SH7KcspH6KpltDG2p/Deyw43PjLx9og2VyjRe7suYOL3omMe2Wbn/F6kQJ3EWdYz2tDGahZsi9P9G/KdC; bm_sv=06BC2D7DBEC1D416234FE1EA4D3C845C~R2qnPAjNvbBgF374sTzwxAyql2Zce4U8OQ8ZtRXO+xSpIiYl9hY1JzlNBX+VKlCUwdwTcxMLJs7F6JBMQsrxd0mBC5hYbJa4H3vFOqJEqscMprTlBPzVw2IYDAoX3TmKiEJbBv7Kbi9RWk64dTQWEZO89UHEBKRNa3rD3ENI83Y=; AKA_A2=A; ak_bmsc=8E194B691A01B1A5EEB025D22F4DB3C8~000000000000000000000000000000~YAAQVV8sMd8Vl9h+AQAAI+wzDA7gG27oonlvSW2+JpCOxXyzpOzmEuAxQBdIpchVNVXlYWDcassQymVCZVWl5swAWgmKhHKhab9tzLKRhuk14tDorT9hJp+PCQEpMhxNsIM/cWXxJbvMlhQcBlHrMHaScTatlY7ScdEOhWw555T2TExgBsCBvPJzd0zmxFMOyxVV76BlmwCMRtwj561sKUskpIyz5M/aZwDXR1kP69+eRGbEPw7r9edOB5fjQMiGf548lz4gig0zFxce9QmMBNXXa5uOGdBb9oY+ymi3pVjP+Sen+4+x7o28UJk5KUyPZPCaFa5Q9/TUZvUDHi6dGU0wN5dnk3mZK24+7fr/wDq+N8R0HAxYI2cgv6//44INt4OpscD5z6q1OQ74A/sEHlARD/Tb1ruN9xats/vTg2Z17UAeg6gM8+htgwo/VhGAzlHOXF3uYyRRuk6F1J+rHGg51WcRXi41mRO3UjwZ2uG3Kima3K0S78D7XwmXrgrSTYaUatfzpiJeOq+9bV5IvLFZCA73wdH/yuJwVXbhqGc98sa14q/z4ofNU8MOjoTD; _abck=694EE6978FFBAC6997FFE88C4B5500DF~0~YAAQVV8sMQUWl9h+AQAADgQ0DAcl5LBGzHbzsFJPT4a/ierSh1mS9KBtDzdg6QSAqxK0I2KKn4fjJIRcAwoqi4UDhJPd+RwdjJyxMlDiZEtQ/ykW3VR05xY41MHTaXlpAoN9dVqCYRps/+E7qxjm4YZ6GzldjoVHGMwt4vrdJOznBK9R1p5EUmHRATZQOKC+qobXLbUE5eLGJeKKMm7eFQLZrX4W8eM6nw1iDG5rBleT3nNEpK1GxlGim1aB1+Dx8UvBM1Wj5FZCZYlpLt4nEodfKfBRDdbc0LuAS3KUvkRQEweNBzaLREylnUg9DvW/bqHZj/DkigpncQOQM/uPGhM3qs1Xet3izDiKrUgr6fk/nK4V0L3iP7Qhf+3MZkymiHZFGvcYGYgSNEaZeHDqf5mMpCBQYFiyCw==~-1~||-1||~-1; BIGipServerp_loginxf-ch2-ipv4_443=!0gdgVCvu/FcgQWs2ljjvjldvjyLKINoRAY4ZP7lU+k4eA2sXLrzkM2SDPYvCv/irD6/etKY2mwC5hvk=; BIGipServerp_loginxf-pdc-ipv4_443=!xK8azjLyzWic4EmDwlooxYS+cQylCFSFF8HQdKo8gkyeG204DXSiCC1hatJfMX1Cu01cUFITY8zGmQ==; aam_sitecore=existing_customer%3Dtrue%2C1898505%3Dy%2C2450016%3Dy%2C2064049%3Dyes%2C2064046%3Dy%2C1892294%3Dy%2C4263718%3Dy%2C4255626%3Dy%2C12965824%3Dy; aam_sc=aamsc%3D8163787; fltk=segID%3D2450016%2CsegID%3D6804930%2CsegID%3D6804829%2CsegID%3D6805246%2CsegID%3D6713501%2CsegID%3D6759513%2CsegID%3D6805246; aam_sitecore=1898505%3Dy%2C2450016%3Dy%2C2962186%3Dy%2C12965824%3Dy; fltk=segID%3D2450016%2CsegID%3D6804930%2CsegID%3D6804829%2CsegID%3D6805246%2CsegID%3D6713501%2CsegID%3D6759513%2CsegID%3D6805246; mbox=PC#be6b6e5bc75140c98e40660f7d90dfa6.34_0#1708422960|session#d0798c137114485d92de4a0b850d89bc#1645180020; BIGipServerp_loginxf-wcdc-ipv4_443=!OswgQ7Zex4VprjlYgMclgnLKC7lGze28h17QlxpNGxE+VR/JbhddOdbYYguoaF5BpC9yLKHFVDyjHsw=; dig-prd_wc=555f2c317b340000726e0f629902000035160000; AMCV_DA11332E5321D0550A490D45%40AdobeOrg=-1124106680%7CMCMID%7C48755559533440834592634234099512864171%7CMCAAMLH-1645783282%7C12%7CMCAAMB-1645783282%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1645185682s%7CNONE%7CvVersion%7C5.2.0%7CMCIDTS%7C19041%7CMCAID%7CNONE; gpv_Page=resi%7Cselfservice%7Clogin%7Cstepped-out%7Center%20xfinity%20id; s_pers=%20s_dfa%3Dcomcastdotcomprod%7C1645180282958%3B%20s_dslv%3D1645178487112%7C1739786487112%3B; s_sq=comcastdotcomprod%3D%2526c.%2526a.%2526activitymap.%2526page%253Dresi%25257Cselfservice%25257Clogin%25257Cstepped-out%25257Center%252520xfinity%252520id%2526link%253DLet%252527s%252520go%2526region%253Dright%2526pageIDType%253D1%2526.activitymap%2526.a%2526.c%2526pid%253Dresi%25257Cselfservice%25257Clogin%25257Cstepped-out%25257Center%252520xfinity%252520id%2526pidt%253D1%2526oid%253DLet%252527s%252520go%2526oidt%253D3%2526ot%253DSUBMIT"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "selectAccount",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "ipAddrAuthn",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "flowStateId",
+							"value": "CgNDRlMQAhgBIiCXrguCfQmjnEfy-cA6IKsmNvWQoo2B9ZMCSXia3oYxISoQUpIYGPATxdN5ec51uyqB2DJ8CjwyMDIwLTA0LTI4dDIxOjI5OjMwIWYxMWFiZGNmLTQyMWEtNDEyMS1hNGUxLTc5MjBiY2FmYzJjZSFlbmMSPDIwMjAtMDQtMjh0MjE6Mjk6MjkhYzk5YWE0MzMtMmQyMi00MDY0LTliMDItMWJkNGVlNzk3YWJhIXNpZzrgHqJViVv5aijAfJcw-nknmSDjoZYlT98qOF-pbVrG7APERMsDWVGtfcI7r-u-0sdRBxyb79_M7gVpIwKX91Vx2aUgAN90AhP5Q890FWtdD6FcsJ1rbXbrUMHFjFsy88VeMzJsH-FkFkBm3L7fBf3nBv45hJvmUrmvyJn9q9zvMtV05xt4NdPqNc7U_UEWYFJZLNs0hRz5YJRDvFvUzE_1-SS3rMfBZNPqX26isjOgDdTaezRg2BZFuf95qodY5ET6KNelY-Jd08KK_dRIBxwbjGU5XBDhQugtr10gs220oDH-srmMQcjFPpHgpXGqpW5YLH-mu4NBQWabuP7TKZlXwg3kCrxZDXsfmaogX1gJNY7Pa5skbCEvnSLhwggC94kk3pC5_cf9FQnKJrc8v3nKQhpf_bhLx9prvknAZE9olk9dUxYE8NmVC9BlyuPLX9O6iuEybVASZS6MdqpJ3y0RnB-igTU_ZISybbhFh8KM_9vTiI0N2yF6F8T-X4DUglEwX_q7_9gyfExqAbyADno3XHHp93AAaSsG1NhtJ7W_efj4dbDcYp_ZBTrZWxm3bN6_gXCLkTI87IqCI_hHkgngGXrw75H72njtvQ0lfK9FpKoLzNbuhV5jMCsaQI1cScFa9wSKO9M42J0GI0hyUBw3v0R7iQjJPhJI2eqdLNmS_wq7qPQGZUMaTREf5_PhRzCauQjzFupZL2MneW8FIIhg7auvpIVmbDI_JTu76eyZLKenC_FcbkzBVJbkrdgKyURZ6VSjeflDVM5LgYMGdAGsyglggBpX9aZTf-9Uxe9JY-gsB4ioiU-jyCwtvH62mhiCHhXuMeX25Ajk0EjPOVj9OGus2qBO8XgZgcNeXN1vtYaSmIqN3BCmFDLKq_UM8-8XoiTB07WxKqSBbVPmDIelxPWc42VpErfEDUk8SqBmZ1iruU61XvhV0Djd7VVtJo0SNRWHnc0qt0QvtkSQd71m8VsDoAQ3xFTONVzhgAJsm9TPdMjKWHF9M24ZgbmXuTGe6HTbf1x6RUPSFphhJwL1VXK6E6hkYH_4XDPUjP5Ol0XfLC3bgiIYlfC_HnHdDAso1tKiWszDGRJfHinSLQ6f0zHmsVjS1ah4Y7Ivd_9qZn0NHeqM4-0EJYoer_9Y1xKTbpnxmDsPZL5hgWOlsX818-brAmSq9TT3bUJmBE3RxR4VGbaLv7KHe0qf-z7DSRilpWyfewP89PJTWmeqyqfCJ3__xJ9mWQHLxXOf7FYevDWmgikNh1YhwhEl5E9rfzzHjva9xHhBVkz62Q-Ydy0C5JzL2x96KFxGcg6l7lxJsxUdAwgcP4b5MsklleN82XtmB6hHtjLRfd52FXG1GXH-FO1IPtzQ1suadWpgN7ZseQFYBRgAjbRA5wHwCUIoUCBWGviiwI01omcemOmzxRq_FrEnqTtNvp4q_62Am_rfcuxmiXxwZMT8__OPWUnOqkY-WyfGkcWip_ivJqQIWBWUJx0qKnMk-12a8gTi3gBkAr62EYBZV5niJXUxdYZxHszUp2SdudSZeoItd0dVumZduiYgPG8QwdVz1YN8oc1fpvinqtRt7LuDfXGw3FXrq0-b59a6Ekrco20ml1ObWyPDuaiKlu0lO9Jg3-o-AL70OBqQzrikJ7FOz_pwSjLkIK5doFsfIMtA67rtTeIUGAAXO9qMPSLsv2Fq9_-SSf1lyboVfXuzMmR6-ADW2jBKXEaY1JJ2W12wkLHtdhFNka2z3plUnOGS8fPLssvKj1ExsJSxoXswzUy1cQN51G6g6kmfYXNAUTm_XiPttJ_u-yWA0JO_N8tcl8RbFmcTJPuZzSV0tjZx37fW70Y8FUYjfOC-WZ3b4RumiELe_7TdUvodi6Rafv6npKT9WCyQdt98vpoXw8yRle7_KHHh3Modrv-oSD5ZIYIjPVOoTrIDLCOQ_-P2JM9dNJYMjt2T-b9PABKxHMGgMfI6dUr3YzGGOnrHXXtKhZnH3g8vveqQ3LYf1GiYaORruMP-xk7vD8xHrgYUfCG6UP-vD4rCw6LH1TdFaIXvhr1cG_l7GhOW7lh5hQe4yMnoWLFxyTGxBZzdGBlxPRrL0Ff5c7MBMLO8xEfDWpVk59gp8rGMnDqK8NZ12B1AUXVOXH3KC8PGhxtycEZjqsTzB2stgSinatRg9inFI9HVHfgmlAJeUAJZkK8CIdu-zDfpewcQmg93MSrAkUM8ojmpPl2p1kJQEOdqmWfNRo_INPnA8HaFScQLg2jPWXnWc-2yAui4UxQ55P7JZWdYhY0jdLv_mvKlxoad-c9ZCfaA2krhhiC5MGmU0KUZbSHWyjl3kTFQ4KiIPUWaT8kvDnEAlrX6-cNgPabqQlH0cv9SCYueaTwTk8EdH5-oVtwfW3OzZrD9WAClmy4MULtNdW7WJcMOnBaVy0G5yHZdps3nNYbTBvQWZni_NmI0pfilhmi4YUbEhNasVUJppuw8FM96rACucnPHX0ElAYz0APqd2VXOoNieK6y77nvpbppsyJFcrn2VCvvaJB6ZQtGX7dVT8zOsddSWWTegM8qkPCvVAlF9pMVQM0-Lm7nr8H_rLWitXZSefP8qrmB1wEToFUQSKl9qGGxb8CdKX6RGioXxi5IpGspaUqnuEqTdx8SC8ap3xx0SrFdRGzAtP2vZegpogP1P3hjd_1e-1j7YQnQEMcPUJFv1RFyV_EutKEh_aaxZUhJaZDUCE0t-goH7QhjB1Jz6FQ2IrfdLjiGYZx-kZEiKXR8OPt_H9owoktM59ahbJIRJewxDZEfb1rhm9Q72tTSFN__Wg94hHGSJyNnQqT5dYAh7CfmzXCemC1P7IgHzs0pGhq3bkryjLtbMxl49QSq_WWJn1mtbhfz0JOyVjYossEPx7z4X7FZ_tegZMTUVIWfsNNREonpUoxVEcbnAuedF17hg3A9YveCcXcATexIpychDwB8Cuu3Xvzw6qFFqY7zvCxZEQIqizEb5OAyoIlMbWxvyNma_80YyWBZDgr5cz7TK4MmJYWuy43EejlfEYBMc7Fl5pMJbSKxoaXDYY8Alj_-Td_FtqJXoFG2j053UsBTPOQutjzM3lgdQFALL2WBcQiiiIr3FkIKV9CLSmBaU2vshiYxYbkd94QFvUIx9uB6Cdp8v_Erac6qzTy5ILFsfcYESeedfOE4dVhhg6dcK2xGYYYeQ6-N6wzWY2BCxPdOj1u6BGah8lAQ_DpjmHqB5OSdATZ_59PAfeUfmlecDwQW0Bf2Q8H9MBTMJwxZ7J6hS1zKAlanHJKUlQaL48W-F1JEteDXwRCyvjwjUdZyoSx_AKzOq28OOs2zIgeiZFmxI8gbvJ4SdFEeR-ymr0-RBwk17GFTYUd9enDheOZH4qmNQZuZ1NXCT1lnoB183ufcgms_xOsxYI2tqgJQTAudl0sLfqu4cDck-Zoqw3Zw1FHapTLH6-0bi9_kOT_f8Jyxp9iLiFPidZlw_jglk8Cj4KoLap8I5C9OArKXcvNGNTgnclngm5FMO3pavFZejT1ObUl7zBkLE8CzkUe1AxGTNChUfcIa0TUnNundQ587JT6VQwDmJLf5nUvkYa2VQV32eKW2GdmiK_Pr4JcdKK7xQXjGL85S9gnoium2aS_0biPOHj9ocjiCl75fulen0ZZCMoGjZf6hfffKn4F77hDrmaqwkr21-Amt80CtFhJS7O7dvfwB4LUiehGcK9Zs4D-z4-LL1RLRIc5EbDQkGf4wlE8R9TZCo1J-n9nIgag9rhe2EQ8iRCEiZba1sNY-j2FoGkLH9NYuL7xzP3l_BGZHWH1y3nqPPjeg1TLIFhYz-TxSUsZGGXUaXZaBcvok7d_opeBOgaRNttO2m-7zVooR1t2cCExsUWMdWju9pi3fCJ87QOqPEeeaUpgtFO0zgIklDx4Oz1ozldsx1ImWPdfad_5C4Ds-O7p7ovItPWe4Y0W_CoUdiBuMdW6z1EC7iA7b3ZVVC1k4gIaHfktA499Qz6XPKJYN1eOoIwunLZEOJ9Xnzv1Pil3iWjq2J4YuG1Zej7VdTK0IBTNr-2eovnYdRXciTbKzvqa-SEZ9C6XWdiaf40sD5KPFC9DI9-qceXw0n-REC-MahjRg0HHkXzAsMPONzBQehyvvqQVAHo54UrGDJVaoBuJrxbZFis-lwYamggpBRtfmwSivgWNAM8NkPZFdhIQPVdE9eW-CRZxTtGPbMEZNRp07AAui366BQSrmbrUBUJBZNQPrJ5u9b2etDLmRgc3DugDYm3e6yn184q2D-1vUAg-rORYIMwbFA8ARL5No85RYXmc09QLztGe4FWYh_uutEQ0X_IUTZoNNFukmkhPoeXRmUAhE8qhz74FQomTV8vil9qxBj7xm3gLfr1-g1E_hUy2ro0R6coToumxOT-DUAQyxjtBZ_QEzHLhUo0jPuaG18zsNjmHgOSMrg5VsGf28CgOlbjJomjLIiEwBRzsvIa3LCFU4X6Tk6x5cCWWo8jOrp6sVgIPl3UzV0GjzGKcI2qzVZc7mQjSRiDv0WX7hXNwnM9NV03Mpn_iHVHDq4jccxlsasUPrgfLiOOvznZiJhRiT1CJNZqVMqQjPoFsnlB9rhKWVkk27BNRbYygYYPgz4YVtgxegJep6WOQD49OfRqG-uGXCBmhJAvBZnK0rPsbop5VeclGBPfwnipYaKHvASC90crWUPwFvPZQt4ehUC2iqKwyQZW85D6OnGuBwmU9ONe74TU_3h29HmWVK2XbrtiRclghCk4P5fDJiVl5gUXfxzBRYqwlcL29YnGEHJ_6BLPWjCc75UA7VVbJwGiC5B1iquxIelJCaJ3expxUH9gI1hUk43smIHk9L8onX78yP2bIGufKnWnU91jGu4aCAHLLZuX28EWcBfhcLOpTG21P3J7J9WCHJ1GNj5YZwaf-ys26JHv2pvVf2lMf7YqJD1AxQTBNKnPiTch8G2L-ZJ99HTyg0FVJ6ZVGmAWkfK96h7QwAI3UR60HnBPUWlCVFVMLBciklGmWgJuRNiyQarjVHr8tSBYJaiQ1IglD6Wg54F-ZCr2_ZkxoXUr363fsWcJtsLC6CRxo4X1Vj9zkLYQlPhZyxbQseqHRY2j4N3XDdJr7AY8qSoSC5ATROhQTAMgBGAcgVmyoyMWs0SZIvwEAOhVF4WBwCDA-7EMYv7D0XaXpJU0dMopcE1EtxRCAdeKhsT6rSgZG6BQ3Lpob8SNEKoHhbI4ZY-FlqEUg6bWdeLLA**",
+							"type": "text"
+						},
+						{
+							"key": "passive",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "xfinity-stream-login",
+							"type": "text"
+						},
+						{
+							"key": "reqId",
+							"value": "70fbcd27-dfe3-4540-a532-2e5b537066d9",
+							"type": "text"
+						},
+						{
+							"key": "r",
+							"value": "comcast.net",
+							"type": "text"
+						},
+						{
+							"key": "s",
+							"value": "oauth",
+							"type": "text"
+						},
+						{
+							"key": "deviceAuthn",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "continue",
+							"value": "https://oauth.xfinity.com/oauth/authorize?state=eyJlbmMiOiJBMTI4R0NNIiwiYWxnIjoiUlNBLU9BRVAtMjU2In0.Uw3ws7tL8x040IzwUdvlQAaq2ZEFftmDMScPw50toKkvSw0CRReSUyVW-1m65ij8Cu0lVvuWgPbYPCrZXrYbIo7TTG2VlVDffi_m8Nv3v2ZPevqhwgo1dOf747thgUnTlr993kLtumil58leysI00Z6zDtDUcSO6tCt5JNcwuVKHz_nQiFQ7MCWhLUYtPSp2HkLwww5Qis4atPgFZDzTyG_5jrco0mg5YXoo5J6Woov9F3B7guZaGDO8qzVcAeiUK4jtpSXNxfax2zY7YenBo2_MPk84nxdSjfYZKky3XGcsJyOWpVBgocnpB2PQlanR5uULwcT5nBMFdcgMR5SgwQ.HNqifTFqWYG6RxUd.qE2n-6mDUjFUhvSvqww8rLoXPZZMfOVZMtdfL4a9S_hotiVeWhY10cP9hOFh2r6e7DJS5QCZ8xY5mwZD6_gQlc_7OGe7AFTPS-pas4p2FJT6fA_WHYVTT4dXQ4ntdl46wkl0T7aAUutoFrEO5S4GLc0rJGY8AJIIOSvz1S6QttUxF7Oohumb1xVirE4nDEHAjSPxrag2HqpBtmQSxBPjey-o09ID7NiNDXaNAcmUChsSjgSw6-tsN4CpK9ct2EQ_Mgvf-O4cpLbPAQcOgdCb-D1v2aPCmCuFq6l5CGKo8ZaUKx20tysNWOERr2Ls2r5-SvYhMTVCfZSBlWawOlRCSmv_mTeNQ2SGxEeeA3CxUkIS_giVLYBi-TMIjar2O27VXyBblDnC2Oa3fJL4oJMtgDc-MoES_7nZ08GTuiDsy7lFHloYDNZeVbwXQ6D9GkjKtN1NgctbscnFBI6EK9OnRvF2vBwQfvO_GqV-idAgMY7aZlHi53mx7vPhHQUIDUxsanlJirmu_-xnW28XQE9Cw9BBzj5AYkr9rFVbEvGtdn22EEaweEWsHw.4_g-h7jl45tLj2rogysfaA&scope=openid&client_id=xfinity-stream-login&response_type=code&redirect_uri=https://xerxes-sub.xerxessecure.com/xerxes-jwt/oauth/code&nonce=xerxes-lite.37ef8b1d-c1cc-4120-975f-617a76e37d9d&prompt=select_billing_account&response=1",
+							"type": "text"
+						},
+						{
+							"key": "forceAuthn",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "lang",
+							"value": "en",
+							"type": "text"
+						},
+						{
+							"key": "flowId",
+							"value": "4cd94154-9676-4825-82e0-3d398b76379b",
+							"type": "text"
+						},
+						{
+							"key": "X-hzfdeCEGvt-f",
+							"value": "AzhpRwx_AQAABbt67I9rIJMiaFqdyWyyIFkwMkngUwxmTMkGhkDw0IBNbqObAXRJt3-uct9pwH8AAEB3AAAAAA==",
+							"type": "text"
+						},
+						{
+							"key": "X-hzfdeCEGvt-b",
+							"value": "-etvplf",
+							"type": "text"
+						},
+						{
+							"key": "X-hzfdeCEGvt-c",
+							"value": "AAAtRgx_AQAAQDifvpEK6qM81Jgw_r3n31Hj0pZK0HggDQTZ8WFFXShSmpnc",
+							"type": "text"
+						},
+						{
+							"key": "X-hzfdeCEGvt-d",
+							"value": "ABaChIjBDKGNgUGAQZIQhISi0eIApJmBDgBhRV0oUpqZ3AAAAABLhyU5AJYlIHpN9VS9frVjdABHXDw",
+							"type": "text"
+						},
+						{
+							"key": "X-hzfdeCEGvt-z",
+							"value": "q",
+							"type": "text"
+						},
+						{
+							"key": "X-hzfdeCEGvt-a",
+							"value": "oAKEDIOn835Zj1iJNFJpzVbINB0XpbQrAnzrF8x852c=_lAaWnbj_pXIB57lIQ9y8xN2KXIn5luvuHkzJonAgNvHnF_V_dMLvINRZB=vzow7A-n2IrpSBbiXche3q86mDUTqEhL2HGGK6kibg6wkM_QRNrFVe_bjm3wKkUwdlyWQRtgJpFi10WkSmK0pbXS_WoiDqhTNjP7i=xKAJizZOLjCZMauMI_iyfkr=GzNQBHTQzM2oGTurjl2XPvbHunuDGIhBeAcOuqMy8yhq77qsUeRIkRE87=O8ApP7o_xZu7VhzaY=JNYbToijQUjwJ1gxyDJPV0SZx5FRDuIljz9w-=aI9S=PW_bWG8CLmzbYLwP=x58RKZZ1tjCaUukYoUk9Xukh5k6UyMGwPWunINNqUDE6nOhRVpD1zU7Es16vQwa2Smq9qfTD=StPbS105CeIqZCK8PaAlQ_Q7tLuxMdK=XOHJQ1lAGdQyZYLNoevyJG0ZHMibhfc9DoANt5xAQdO_W293pniC2qgvBFXj3=d6IrHea1e3KYv6SmEgDgBMXz90NjuYdjZua5qoLuVFe6zIgu1VJM6PoANefi6xi0vYSMqCcnGI9u=Zu=P37PlUnKIVZUuBz-YmTLJ0sjxyhR7ut8uVHJHKADwG_Ca_=AaGjp8XqDF3yq=YwC7Lo=l5bZS7u7ZYtkHI8udYiSl9h3_FpBfahCTPCSSvLYyZov7EjyAiJwIL6XomFdYTIiu1lIyq=laxnACQCT9Xv=IqHNGUgiBC_BkrQPDdq-b0Dz-tVWnUEgJDiM6pB2_CCFAGt7iBlbDeA_rLX-2W8gxl0gTKes3LNnm1SJ8-bet8RJhFTSb_qLxI_Kz88jh3o8GUGA5CWfGuYraPcZyJAKv-FKRb_h_k15FGnKML-02nbpwm02DksIAPifrz-pq2JR7vcLTtjSdjYORjXBmk1K7rYeaqcugtV91heXSMBZIL3ZIJLOZAPNObFNPUXp3B1HlgCj-zqBRx5XCeQGxEddJkwqxCU62WE88ViHlT6AhzVnbOaJSCLcXzGlJB=-tRe69Mceiej=oVxuA-WaOeWI-gmHeu8fV71l_n1EbgOar-m1_RW7L1rJQGowXGRIrCLScjkfWiuT231rsgr2nPwK=j27L3BkwRyV2NMIapKgB-BUXiThxPQCo19BfQz3fG12NCSv7WbvXBXeyGrdlSZ6AxZr7fPs-Y8HT3GwpjFQFLZSmEnDLxzTMMLCeItf5WiwRsyIbHw_MEZl70qu=vIH0V-sCo8RhDSIOowZJxyXDAMJwqWfp5ceISwI1-cAR8Uabyx3cp1yA8L_wxeGzL8_Su9pJYDR3QJz7aFyhPYp_KfnQH1OO_WeKcixsGWbh22uvrSK_rnFDBHwHJPYbkCV30i8G0kExTj0LI2vCpmroH7rkaEkRODPoIUtJkZrbGBHDJqJPP_zeQJLgk166Id_v-1T8_u6-2NxciZJ30Qbk2IvHsN_5=lHVi0nkftZD-eGlHgfmB-S6rYUYjidRXLI02pg6EzipBLLnUQNOxcNZ_VQr-QvyJr6HqK-28HMnXfoyq9BlT9NG_pcVSrY=yC65sJT6BYio2ZPCS-P739L980P0Df1rb=FLAIz1HtOXarPWjbUaOvtQSxDZ2=E3DYVYPnmT0a_dH63qsHe6aqGdqHgaqGFZHCe=eJ8kBY5XBdjl9POXjkgNSRDPNoIwSaRAtwjRiQ8GXadMxzP=gaXFmCQ5SaHlew0MqMfmgnnniRZF9dPQnYQtUtNBZIIdWcyPzt1GsfNP60EP5mCJ2HBWrTXijXJvi8pEFcmAuYEnPlJ5EuIhig3z6UVPbAlYRe8wNevDZpGad78jKonM-5wn1_YrRekxqGVO3de9XyFTiqZHtmJq0xywV-tk0kn=VMJo7xPWQqU0AZmpyxhnxqdYrPg0QlCK6llE9GM=2ubnj5VUN_u1MH5LkySXp=JoPIEM7Q_GD3nRHF3yCqF5G71ypooAfp-f_Hyie23EIoqJXXVWRnASc9v5Mu8SeqDFukNo9oqLpeykGx8bKI3I_UY_NUx68_TFm9x=-_rgKtWnY0x2dptVrGW9z1lD=ItdnJys-5fzfYH8HY-RZ_x0tJ-Q9euSnpjgbbBnjeMRRNurHVWYHSWgBkU7g1_8bYjzBCFrGD0PvFgpkT-Q8dCimZaaEuL0lMr0oP-nXPzFHEAl8rkQR3vIO5NDFDGln_Id3-mY2Xb_6=QsnRzPvS0e2Dsr1qg2mkQXaPjUrN2Lhv5hj6-35lNyCT5iOKbk6_-vlyB-gBFnfprBQ=6SzWwPo5cvNBE-QA2D-Fm9CAHRA2O8_T8_YLODE9fOjebK=i-9ag1s_hyiMyqGtttr6tsEA5FUvR0SchyJ7TzFEjHMi2MlXxwEY5-vBuk5e57Ml6S_LPV=e_wj5FAV1PZK-PEAQGwzXNY5IchU67gSz1yLR29h8L3XX3bJj2q5BDIcZVGeGYL1nvxROCL20WXaliYHC1VGMnCydhKRO-r=YjzB=PY5WSvLNA2_kGubbaw3GmeVptd7nX2ptLyDHNobpyDcTaWDLbPobDwkByvf=9mn6QbN9JOjGGsPG1mB77-iAJ_eP5TVux3Dn=Wr3VR_DbgVrox_Ihs-YUg5SiaYb0ix20k-ubYxgRjGEJhVSaVlhdorel1Ha72RuUQn5uUpMIVfs-DiXuRM7gW2eTUTeckfCUoq5nnXKb=JuZlY0bw8uRfdiNQR3LSN3bDYzWHMq7p_aLYZhx028vQKi0z9m3ZWB2zY2qzrCr9ICnFYNEnTQ08CrJPmEqPJNrweLFBxZ=qQ93RWzMXFeQcGM8t75_8LuUG309jqYe570rfJrwc_iVZYuPIappdVNkJVXxCevg1Ysc_STQmRPmr2McdNnUVBzhs1_0I6cdwvLwKV6oYK8vj5bixRPdCkXXuDgtrb5L3ifidojK=QT9OuB7nwI5ZMF-FsB_EtY=0kzKEL_od=n_GGPeKOdgymooMNiJ2CBB7iXIo=bwoaXceq5rKbCRxJkRegvHzgvuoQ_BDQflR7TDJgd=IODsx8ISlWz9bhM9J-QsW1ioSaITGvP3qrZ2cRgghdKI610m0O7dW1bQaOIiZUbKGCjbdaweajxkLiIe=8MvWQQxruKyfkQqi8uKb=sdyjoMnSEJj6WuSVE79mqY_vcAUcinNxDfgIfPZRQLgSPe_QnYwdpvengNsv9pkmcmISfj3dV_cLyksiyaSPLfdKSSk2mwETQUC8rSimViLigL6TWRQb5xSsrSFw3DsnyiZ3t9zMC1sjbzEEOtwcB-D7sZDPRAiWKuE6E8ZIeDiu6PqrBC8F90KIFJnltncY5QMrcBl50xF=OYFbeTMynSVM-asYe0kOH_BbCkaY3eq70Xr2b=VIYfLQFelXu52DLn0I3PdMXKGtsmB5EKDcJZIMVxZrStu1TCF8ZZXYqDwmzwa5iEafnyW-Rx=hTGJ-GlUbcmXRDtTtfd0BBoJJZXNLXwVkkjvMPphGjc7U5R3H-2ryaPsZPY7H7l8P=sU2uX7RjzsQ6Ubt1KtG7g90gMZw3-=ElTNrHm3pBCouiIliyJGpDs7SAWTyBO-muqkCXro9T6pxyshaYssDRw7Nh5lLcsH=b=QO2=IY1Q2b1P2xLGWmpRkF1YubrSCJTGYRHxyEMQRvQTTEDbXu-vO1_InxBPXIEVYbZ6VMh80GROVF8foheUS2KLP-_WDpstITlGVgri9KiCfngpWlsPAz-8-vI8_3-=vdpy9OsIRjDQ-0ESfw0ni2JZpy_ppxIm-rR7ZXwMw=RG5vLgDMNrFtR9VcP5ZbHDGb6pyprXhu=NPRiq7n8AEZAHf0S3s92RyTcnUQidn8DltVHgQUndncuyZ7mVootpLHvD5ZZeejsQI1VquvCd_r0u5f8F-8w-odmjYCnt5YiR3g80jOoqGf8=WFjuRpNC2xoe2bZ99m3KR0LcxEEsghhh3jriAJtvxXeLnkYKMImQXib__cfV3C6gnonoG6M_ZPA1OprGoR7zxtgp1B7157hEyIN-qMNwFZlQ6RLpz15cH5MSpwtSRKKQwobS_ziR0b37RcApIhljIQ9r6Gbsz-C2j-P-DQzqtu2osyA106CZvDCCznOxs135MhLvag=-N7gWrXmffIYzLMBP9ydzT35=HFSKPgD0xGGKYQCa1lQfsNkmKYaVZEeq30d5gWFT8x1QbvA0v8T6epaU8KohKZkFLtOkvFI=_sbuz9tyc0Ky-bBFVfeslTVx0AeajQzuy1eQ0Cl8Nlde91Zzf2fNvDzsfJL688rSq6qKokdHfuXRdjqF_KGlRAkWpB2dPtLZ333Yd7hiJL2fVrf5j5tL8teB-X3tb6_Oa_1XftmMQB3v6Dvn5YGFpsePZIsx5ZEijsBtDNM=5hpwBVdAoUasP=tTLTnkmLL3tC=i-05xSFAQNIUM32igkaVrJe6S0f3hJR7DSRl7tcACgPvIVeicglRV3DqbSBiFRBreh-K-hX6NnYWzEtsG2ELgmFhkei2HWnxPTicowIzvrQWjndE0jsvFb6i=0IUN7Y=e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://login.xfinity.com/login",
+					"protocol": "https",
+					"host": [
+						"login",
+						"xfinity",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "XFINITY STREAM",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.xfinity.com/stream/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"xfinity",
+						"com"
+					],
+					"path": [
+						"stream",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
